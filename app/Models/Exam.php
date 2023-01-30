@@ -14,4 +14,7 @@ class Exam extends Model
         'address'
     ];
 
+    public function Exam(){
+        return $this->belongsTo('App\Models\Course');
+    }
 }
