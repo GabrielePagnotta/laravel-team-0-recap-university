@@ -16,4 +16,8 @@ class Course extends Model
         'cfu',
         'website'
     ];
+
+    public function courses(){
+        return $this->hasMany('App\Models\Exam');
+    }
 }
